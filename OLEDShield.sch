@@ -1,0 +1,631 @@
+EESchema Schematic File Version 2  date Wed 29 May 2013 14:28:42 EST
+LIBS:freetronics_kicad_sch_lib
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OLEDShield-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "29 may 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JOYSTICK_W_BUTTON JOYSTICK1
+U 1 1 51A3ECA9
+P 10200 6550
+F 0 "JOYSTICK1" H 10400 6100 60  0000 C CNN
+F 1 "JOYSTICK_W_BUTTON" H 10200 6200 30  0000 C CNN
+F 2 "~" H 10300 5950 60  0000 C CNN
+F 3 "~" H 10300 5950 60  0000 C CNN
+	1    10200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BUZZER PIEZO1
+U 1 1 51A3FCBF
+P 8500 6000
+F 0 "PIEZO1" V 8350 6000 70  0000 L BNN
+F 1 "BUZZER" V 8850 6000 70  0000 L BNN
+F 2 "~" H 8500 6000 60  0000 C CNN
+F 3 "~" H 8500 6000 60  0000 C CNN
+	1    8500 6000
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 51A40604
+P 8050 6150
+F 0 "R1" V 8130 6150 40  0000 C CNN
+F 1 "1M" V 8057 6151 40  0000 C CNN
+F 2 "~" V 7980 6150 30  0000 C CNN
+F 3 "~" H 8050 6150 30  0000 C CNN
+	1    8050 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 51A406C0
+P 9500 6050
+F 0 "R2" V 9580 6050 40  0000 C CNN
+F 1 "10K" V 9507 6051 40  0000 C CNN
+F 2 "~" V 9430 6050 30  0000 C CNN
+F 3 "~" H 9500 6050 30  0000 C CNN
+	1    9500 6050
+	1    0    0    -1  
+$EndComp
+Text Label 9050 6450 2    60   ~ 0
+JOY_BUTTON
+$Comp
+L GND #PWR01
+U 1 1 51A4079E
+P 9900 6150
+F 0 "#PWR01" H 9900 6150 30  0001 C CNN
+F 1 "GND" H 9900 6080 30  0001 C CNN
+F 2 "" H 9900 6150 60  0000 C CNN
+F 3 "" H 9900 6150 60  0000 C CNN
+	1    9900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 51A407AD
+P 10950 6350
+F 0 "#PWR02" H 10950 6350 30  0001 C CNN
+F 1 "GND" H 10950 6280 30  0001 C CNN
+F 2 "" H 10950 6350 60  0000 C CNN
+F 3 "" H 10950 6350 60  0000 C CNN
+	1    10950 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 51A407BC
+P 9400 6950
+F 0 "#PWR03" H 9400 6950 30  0001 C CNN
+F 1 "GND" H 9400 6880 30  0001 C CNN
+F 2 "" H 9400 6950 60  0000 C CNN
+F 3 "" H 9400 6950 60  0000 C CNN
+	1    9400 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 51A408D4
+P 4100 5750
+F 0 "#PWR04" H 4100 5750 30  0001 C CNN
+F 1 "GND" H 4100 5680 30  0001 C CNN
+F 2 "" H 4100 5750 60  0000 C CNN
+F 3 "" H 4100 5750 60  0000 C CNN
+	1    4100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 51A40A13
+P 6600 5000
+F 0 "#PWR05" H 6600 5000 30  0001 C CNN
+F 1 "GND" H 6600 4930 30  0001 C CNN
+F 2 "" H 6600 5000 60  0000 C CNN
+F 3 "" H 6600 5000 60  0000 C CNN
+	1    6600 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6400 4200 0    60   ~ 0
+MOSI
+Text Label 5350 4200 2    60   ~ 0
+SCK
+Text Label 5350 4100 2    60   ~ 0
+MISO
+$Comp
+L GND #PWR06
+U 1 1 51A40BD1
+P 6600 4450
+F 0 "#PWR06" H 6600 4450 30  0001 C CNN
+F 1 "GND" H 6600 4380 30  0001 C CNN
+F 2 "" H 6600 4450 60  0000 C CNN
+F 3 "" H 6600 4450 60  0000 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 8700 3150 0    60   ~ 0
+Vertical top OLED Connector
+Text Label 8950 3450 2    60   ~ 0
+uSD_nCS
+Text Label 9750 3450 0    60   ~ 0
+uSD_CD
+Text Label 8950 3550 2    60   ~ 0
+MISO
+Text Label 9750 3550 0    60   ~ 0
+MOSI
+Text Label 8950 3650 2    60   ~ 0
+SCK
+Text Label 9750 3650 0    60   ~ 0
+OLED_nCS
+Text Label 8600 3750 0    60   ~ 0
+OLED_DnC
+Text Label 9750 3750 0    60   ~ 0
+OLED_nRST
+$Comp
+L +5V #PWR07
+U 1 1 51A3F003
+P 8500 3300
+F 0 "#PWR07" H 8500 3390 20  0001 C CNN
+F 1 "+5V" H 8500 3390 30  0000 C CNN
+F 2 "" H 8500 3300 60  0000 C CNN
+F 3 "" H 8500 3300 60  0000 C CNN
+	1    8500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 51A3F00A
+P 10200 3400
+F 0 "#PWR08" H 10200 3400 30  0001 C CNN
+F 1 "GND" H 10200 3330 30  0001 C CNN
+F 2 "" H 10200 3400 60  0000 C CNN
+F 3 "" H 10200 3400 60  0000 C CNN
+	1    10200 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_5X2 P1
+U 1 1 51A3F012
+P 9350 3550
+F 0 "P1" H 9350 3850 60  0000 C CNN
+F 1 "CONN_5X2" V 9350 3550 50  0000 C CNN
+F 2 "~" H 9350 3550 60  0000 C CNN
+F 3 "~" H 9350 3550 60  0000 C CNN
+	1    9350 3550
+	1    0    0    -1  
+$EndComp
+Text Notes 8650 4250 0    60   ~ 0
+Right-angle side OLED Connector
+Text Label 8050 4550 2    60   ~ 0
+uSD_nCS
+Text Label 9750 4550 0    60   ~ 0
+uSD_CD
+Text Label 8950 4650 2    60   ~ 0
+MISO
+Text Label 9750 4650 0    60   ~ 0
+MOSI
+Text Label 8950 4750 2    60   ~ 0
+SCK
+Text Label 10650 4750 0    60   ~ 0
+OLED_nCS
+Text Label 8500 4850 0    60   ~ 0
+OLED_DnC
+Text Label 10600 4950 0    60   ~ 0
+OLED_nRST
+$Comp
+L +5V #PWR09
+U 1 1 51A3EE5D
+P 8500 4400
+F 0 "#PWR09" H 8500 4490 20  0001 C CNN
+F 1 "+5V" H 8500 4490 30  0000 C CNN
+F 2 "" H 8500 4400 60  0000 C CNN
+F 3 "" H 8500 4400 60  0000 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 51A3EE64
+P 10200 4500
+F 0 "#PWR010" H 10200 4500 30  0001 C CNN
+F 1 "GND" H 10200 4430 30  0001 C CNN
+F 2 "" H 10200 4500 60  0000 C CNN
+F 3 "" H 10200 4500 60  0000 C CNN
+	1    10200 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_5X2 P2
+U 1 1 51A3EE6C
+P 9350 4650
+F 0 "P2" H 9350 4950 60  0000 C CNN
+F 1 "CONN_5X2" V 9350 4650 50  0000 C CNN
+F 2 "~" H 9350 4650 60  0000 C CNN
+F 3 "~" H 9350 4650 60  0000 C CNN
+	1    9350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 51A3EFBF
+P 4100 5000
+F 0 "#PWR011" H 4100 5100 30  0001 C CNN
+F 1 "VCC" H 4100 5100 30  0000 C CNN
+F 2 "" H 4100 5000 60  0000 C CNN
+F 3 "" H 4100 5000 60  0000 C CNN
+	1    4100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 51A3F081
+P 4100 5300
+F 0 "#PWR012" H 4100 5390 20  0001 C CNN
+F 1 "+5V" H 4100 5390 30  0000 C CNN
+F 2 "" H 4100 5300 60  0000 C CNN
+F 3 "" H 4100 5300 60  0000 C CNN
+	1    4100 5300
+	1    0    0    -1  
+$EndComp
+Text Label 4200 6100 0    60   ~ 0
+JOY_X
+Text Label 4200 6200 0    60   ~ 0
+JOY_Y
+Text Notes 7800 5550 0    60   ~ 0
+Piezo Buzzer\n
+Text Notes 10000 5450 0    60   ~ 0
+Joystick
+$Comp
+L VCC #PWR013
+U 1 1 51A3F2D6
+P 9500 5600
+F 0 "#PWR013" H 9500 5700 30  0001 C CNN
+F 1 "VCC" H 9500 5700 30  0000 C CNN
+F 2 "" H 9500 5600 60  0000 C CNN
+F 3 "" H 9500 5600 60  0000 C CNN
+	1    9500 5600
+	1    0    0    -1  
+$EndComp
+Text Label 10800 6550 0    60   ~ 0
+JOY_X
+Text Label 10200 6050 1    60   ~ 0
+JOY_Y
+$Comp
+L GND #PWR014
+U 1 1 51A3F9E3
+P 8050 6550
+F 0 "#PWR014" H 8050 6550 30  0001 C CNN
+F 1 "GND" H 8050 6480 30  0001 C CNN
+F 2 "" H 8050 6550 60  0000 C CNN
+F 3 "" H 8050 6550 60  0000 C CNN
+	1    8050 6550
+	1    0    0    -1  
+$EndComp
+Text Label 7400 5900 0    60   ~ 0
+PIEZO
+Text Label 6400 5200 0    60   ~ 0
+PIEZO
+Text Label 6400 5700 0    60   ~ 0
+OLED_nCS
+Text Label 6400 5900 0    60   ~ 0
+uSD_CD
+Text Label 6400 6000 0    60   ~ 0
+uSD_nCS
+Text Label 6400 6100 0    60   ~ 0
+OLED_nRST
+Text Label 6400 6200 0    60   ~ 0
+OLED_DnC
+NoConn ~ 6400 4100
+$Comp
+L ARDUINO_SHIELD SHIELD1
+U 1 1 51A3FC48
+P 5450 5600
+F 0 "SHIELD1" H 5000 6750 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 5500 4650 60  0000 C CNN
+F 2 "~" H 5450 5600 60  0000 C CNN
+F 3 "~" H 5450 5600 60  0000 C CNN
+	1    5450 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5350 4300
+NoConn ~ 4500 5200
+NoConn ~ 4500 5300
+NoConn ~ 4500 5700
+NoConn ~ 4500 5900
+NoConn ~ 4500 6300
+NoConn ~ 4500 6400
+NoConn ~ 6400 6300
+NoConn ~ 6400 6400
+NoConn ~ 6400 5300
+NoConn ~ 6400 5400
+NoConn ~ 6400 5500
+NoConn ~ 6400 4600
+NoConn ~ 6400 4700
+NoConn ~ 6400 4800
+NoConn ~ 6400 5000
+NoConn ~ 6400 5100
+Text Label 6400 5800 0    60   ~ 0
+JOY_BUTTON
+$Comp
+L PWR_FLAG #FLG015
+U 1 1 51A406F6
+P 4300 5650
+F 0 "#FLG015" H 4300 5745 30  0001 C CNN
+F 1 "PWR_FLAG" H 4300 5830 30  0000 C CNN
+F 2 "" H 4300 5650 60  0000 C CNN
+F 3 "" H 4300 5650 60  0000 C CNN
+	1    4300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 51A40BA9
+P 4300 5100
+F 0 "#FLG016" H 4300 5195 30  0001 C CNN
+F 1 "PWR_FLAG" H 4300 5280 30  0000 C CNN
+F 2 "" H 4300 5100 60  0000 C CNN
+F 3 "" H 4300 5100 60  0000 C CNN
+	1    4300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 51A41CA5
+P 4300 5400
+F 0 "#FLG017" H 4300 5495 30  0001 C CNN
+F 1 "PWR_FLAG" H 4300 5580 30  0000 C CNN
+F 2 "" H 4300 5400 60  0000 C CNN
+F 3 "" H 4300 5400 60  0000 C CNN
+	1    4300 5400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 6000
+$Comp
+L SJ SJ1
+U 1 1 51A42C0D
+P 7850 5900
+F 0 "SJ1" H 7750 5750 70  0000 L BNN
+F 1 "SJ" H 7750 6000 70  0001 L BNN
+F 2 "~" H 7850 5900 60  0000 C CNN
+F 3 "~" H 7850 5900 60  0000 C CNN
+	1    7850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SJ SJ2
+U 1 1 51A42CE0
+P 9300 6450
+F 0 "SJ2" H 9200 6300 70  0000 L BNN
+F 1 "SJ" H 9200 6550 70  0001 L BNN
+F 2 "~" H 9300 6450 60  0000 C CNN
+F 3 "~" H 9300 6450 60  0000 C CNN
+	1    9300 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6300 9500 6450
+Connection ~ 9500 6450
+Wire Wire Line
+	9600 6650 9400 6650
+Wire Wire Line
+	9400 6650 9400 6950
+Wire Wire Line
+	9600 6800 9400 6800
+Connection ~ 9400 6800
+Wire Wire Line
+	10800 6650 11150 6650
+Wire Wire Line
+	6400 4900 6600 4900
+Wire Wire Line
+	6600 4900 6600 5000
+Wire Wire Line
+	6400 4200 6700 4200
+Wire Wire Line
+	5350 4100 5000 4100
+Wire Wire Line
+	5350 4200 5000 4200
+Wire Wire Line
+	6600 4450 6600 4300
+Wire Wire Line
+	6600 4300 6400 4300
+Wire Wire Line
+	10200 3350 9750 3350
+Wire Wire Line
+	8950 3450 8600 3450
+Wire Wire Line
+	9750 3450 10100 3450
+Wire Wire Line
+	8950 3550 8600 3550
+Wire Wire Line
+	9750 3550 10100 3550
+Wire Wire Line
+	8950 3650 8600 3650
+Wire Wire Line
+	9750 3650 10100 3650
+Wire Wire Line
+	8600 3750 8950 3750
+Wire Wire Line
+	9750 3750 10100 3750
+Wire Wire Line
+	10200 3350 10200 3400
+Wire Wire Line
+	8500 3350 8950 3350
+Wire Wire Line
+	8500 3300 8500 3350
+Wire Wire Line
+	10200 4450 9750 4450
+Wire Wire Line
+	8500 4550 8950 4550
+Wire Wire Line
+	9750 4550 10100 4550
+Wire Wire Line
+	8500 4650 8950 4650
+Wire Wire Line
+	9750 4650 10100 4650
+Wire Wire Line
+	8500 4750 8950 4750
+Wire Wire Line
+	9750 4750 10200 4750
+Wire Wire Line
+	8500 4850 8950 4850
+Wire Wire Line
+	9750 4850 10100 4850
+Wire Wire Line
+	10200 4450 10200 4500
+Wire Wire Line
+	8500 4450 8950 4450
+Wire Wire Line
+	8500 4400 8500 4450
+Wire Wire Line
+	4100 5400 4500 5400
+Wire Wire Line
+	4100 5100 4500 5100
+Wire Wire Line
+	4500 6200 4200 6200
+Wire Wire Line
+	4500 6100 4200 6100
+Wire Wire Line
+	10300 5650 10300 6050
+Wire Wire Line
+	10200 5750 10200 6050
+Wire Wire Line
+	9500 5600 9500 5800
+Wire Wire Line
+	9500 5650 11150 5650
+Connection ~ 10300 5650
+Connection ~ 9500 5650
+Wire Wire Line
+	10100 5900 10100 6050
+Wire Wire Line
+	10100 5900 9900 5900
+Wire Wire Line
+	9900 5900 9900 6150
+Wire Wire Line
+	10800 6550 11100 6550
+Wire Wire Line
+	8050 5900 8400 5900
+Connection ~ 8050 5900
+Wire Wire Line
+	8400 6000 8250 6000
+Wire Wire Line
+	8250 6000 8250 6400
+Wire Wire Line
+	8250 6400 8050 6400
+Wire Wire Line
+	8050 6400 8050 6550
+Wire Wire Line
+	6400 5200 6700 5200
+Wire Wire Line
+	6400 5900 6900 5900
+Wire Wire Line
+	6400 6000 6900 6000
+Wire Wire Line
+	6400 6100 6900 6100
+Wire Wire Line
+	6400 6200 6900 6200
+Wire Wire Line
+	6400 5700 6900 5700
+Wire Wire Line
+	6400 5800 6900 5800
+Wire Wire Line
+	4100 5400 4100 5300
+Wire Wire Line
+	4100 5750 4100 5650
+Wire Wire Line
+	4100 5100 4100 5000
+Connection ~ 4300 5100
+Connection ~ 4300 5400
+Connection ~ 4300 5650
+Wire Wire Line
+	4500 5500 4450 5500
+Wire Wire Line
+	4450 5500 4450 5600
+Wire Wire Line
+	4400 5600 4500 5600
+Wire Wire Line
+	4100 5650 4400 5650
+Connection ~ 4450 5600
+Wire Wire Line
+	4400 5650 4400 5600
+Wire Wire Line
+	7400 5900 7650 5900
+Wire Wire Line
+	9500 6450 9600 6450
+Wire Wire Line
+	9100 6450 8500 6450
+$Comp
+L SJ SJ3
+U 1 1 51A43705
+P 8300 4550
+F 0 "SJ3" H 8200 4400 70  0000 L BNN
+F 1 "SJ" H 8200 4650 70  0001 L BNN
+F 2 "~" H 8300 4550 60  0000 C CNN
+F 3 "~" H 8300 4550 60  0000 C CNN
+	1    8300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4550 7650 4550
+$Comp
+L SJ SJ4
+U 1 1 51A43768
+P 10400 4750
+F 0 "SJ4" H 10300 4600 70  0000 L BNN
+F 1 "SJ" H 10300 4850 70  0001 L BNN
+F 2 "~" H 10400 4750 60  0000 C CNN
+F 3 "~" H 10400 4750 60  0000 C CNN
+	1    10400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4750 11100 4750
+$Comp
+L SJ SJ5
+U 1 1 51A45081
+P 10400 4950
+F 0 "SJ5" H 10300 4800 70  0000 L BNN
+F 1 "SJ" H 10300 5050 70  0001 L BNN
+F 2 "~" H 10400 4950 60  0000 C CNN
+F 3 "~" H 10400 4950 60  0000 C CNN
+	1    10400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4850 10100 4950
+Wire Wire Line
+	10100 4950 10200 4950
+Wire Wire Line
+	10600 4950 11100 4950
+Text Notes 8400 5000 0    30   ~ 0
+Available mod: To drive two different OLED modules simultaneously,\ncut SJ3-5 and reroute the connections to unused digital I/O pins.
+Wire Wire Line
+	10800 6450 10800 6250
+Wire Wire Line
+	10800 6250 10950 6250
+Wire Wire Line
+	10950 6250 10950 6350
+Wire Wire Line
+	11150 5650 11150 6650
+Text Notes 9600 5550 0    30   ~ 0
+NB: Joystick is rotated 90 degrees on PCB so X & Y axes are\nswapped from the pin names on the module. Labels JOY_X\n& JOY_Y are correct.
+$EndSCHEMATC

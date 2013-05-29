@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 29 May 2013 14:28:50 EST
+
+BeginCmp
+TimeStamp = /51A3ECA9;
+Reference = JOYSTICK1;
+ValeurCmp = JOYSTICK_W_BUTTON;
+IdModule  = JOYSTICK_W_BUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3FCBF;
+Reference = PIEZO1;
+ValeurCmp = BUZZER;
+IdModule  = BUZZER-12X12-SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A40604;
+Reference = R1;
+ValeurCmp = 1M;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A406C0;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3F012;
+Reference = P1;
+ValeurCmp = CONN_5X2;
+IdModule  = DIL10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3EE6C;
+Reference = P2;
+ValeurCmp = CONN_5X2;
+IdModule  = DIL10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3FC48;
+Reference = SHIELD1;
+ValeurCmp = ARDUINO_SHIELD;
+IdModule  = ARDUINO_SHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A42C0D;
+Reference = SJ1;
+ValeurCmp = SJ;
+IdModule  = SJ_SHORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A42CE0;
+Reference = SJ2;
+ValeurCmp = SJ;
+IdModule  = SJ_SHORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A43705;
+Reference = SJ3;
+ValeurCmp = SJ;
+IdModule  = SJ_SHORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A43768;
+Reference = SJ4;
+ValeurCmp = SJ;
+IdModule  = SJ_SHORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A45081;
+Reference = SJ5;
+ValeurCmp = SJ;
+IdModule  = SJ_SHORTED;
+EndCmp
+
+EndListe

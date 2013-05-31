@@ -1,10 +1,45 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 29 May 2013 14:28:50 EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 31 May 2013 13:52:42 EST
 
 BeginCmp
 TimeStamp = /51A3ECA9;
 Reference = JOYSTICK1;
 ValeurCmp = JOYSTICK_W_BUTTON;
 IdModule  = JOYSTICK_W_BUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3F012;
+Reference = P1;
+ValeurCmp = CONN_5X2;
+IdModule  = DIL10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A3EE6C;
+Reference = P2;
+ValeurCmp = CONN_5X2;
+IdModule  = DIL10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A81ECE;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = 1pin_prototyping_mini;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A82107;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = 1pin_prototyping_mini;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A826B4;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = 1pin_prototyping_mini;
 EndCmp
 
 BeginCmp
@@ -26,20 +61,6 @@ TimeStamp = /51A406C0;
 Reference = R2;
 ValeurCmp = 10K;
 IdModule  = SM0603;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A3F012;
-Reference = P1;
-ValeurCmp = CONN_5X2;
-IdModule  = DIL10;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A3EE6C;
-Reference = P2;
-ValeurCmp = CONN_5X2;
-IdModule  = DIL10;
 EndCmp
 
 BeginCmp

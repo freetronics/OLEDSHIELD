@@ -1,5 +1,5 @@
-update=Tue 28 May 2013 11:55:30 EST
-last_client=cvpcb
+update=Fri 31 May 2013 16:43:29 EST
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -40,6 +40,11 @@ LibName15=pga_sockets
 LibName16=valves
 LibName17=library/freetronics_kicad_pcb_lib
 LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -80,8 +85,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms

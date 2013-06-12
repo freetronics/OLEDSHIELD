@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 10 Jun 2013 15:39:52 EST
+EESchema Schematic File Version 2  date Wed 12 Jun 2013 13:40:15 EST
 LIBS:freetronics_kicad_sch_lib
 LIBS:power
 LIBS:device
@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Freetronics OLEDShield              http://www.freetronics.com/oledshield"
-Date "31 may 2013"
-Rev "1.0"
+Date "12 jun 2013"
+Rev "0.1"
 Comp "(C)2013 Freetronics Pty Ltd"
 Comment1 "Released under TAPR Open Hardware License www.tapr.org/ohl"
 Comment2 "SKU: OLEDSHIELD"
@@ -127,12 +127,12 @@ $EndComp
 $Comp
 L GND #PWR04
 U 1 1 51A408D4
-P 4100 5400
-F 0 "#PWR04" H 4100 5400 30  0001 C CNN
-F 1 "GND" H 4100 5330 30  0001 C CNN
-F 2 "" H 4100 5400 60  0000 C CNN
-F 3 "" H 4100 5400 60  0000 C CNN
-	1    4100 5400
+P 4100 5450
+F 0 "#PWR04" H 4100 5450 30  0001 C CNN
+F 1 "GND" H 4100 5380 30  0001 C CNN
+F 2 "" H 4100 5450 60  0000 C CNN
+F 3 "" H 4100 5450 60  0000 C CNN
+	1    4100 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -520,7 +520,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5050 3850 4950
 Wire Wire Line
-	4100 5400 4100 5300
+	4100 5300 4100 5450
 Wire Wire Line
 	3850 4750 3850 4650
 Connection ~ 4050 4750
@@ -587,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 3850 11150 3850
 Text Notes 8350 3900 0    30   ~ 0
-Available mod: To drive two different OLED modules simultaneously,\ncut SJ3-5 and reroute the connections to unused digital I/O pins.
+To modify the board to use two different OLED modules simultaneously,\ncut SJ4 & SJ5 and reroute the connections P3 & P4 to unused\ndigital I/O pins. Similarly SJ3 & P5 for dual microSD slots.
 Wire Wire Line
 	10350 6100 10350 5900
 Wire Wire Line
@@ -727,4 +727,22 @@ Wire Wire Line
 Connection ~ 8200 3450
 Text Label 8900 3450 2    60   ~ 0
 RHS_uSD_nCS
+$Comp
+L SW_PUSHBUTTON SW1
+U 1 1 51B7C154
+P 3200 5100
+F 0 "SW1" H 3050 5210 50  0000 C CNN
+F 1 "SW_PUSHBUTTON" H 3200 5020 50  0000 C CNN
+F 2 "~" H 3200 5100 60  0000 C CNN
+F 3 "~" H 3200 5100 60  0000 C CNN
+	1    3200 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4800 4200 4850
+Wire Wire Line
+	3200 4800 4200 4800
+Wire Wire Line
+	3200 5400 4100 5400
+Connection ~ 4100 5400
 $EndSCHEMATC

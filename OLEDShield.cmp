@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 31 May 2013 13:52:42 EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 12 Jun 2013 10:31:05 EST
 
 BeginCmp
 TimeStamp = /51A3ECA9;
@@ -103,6 +103,13 @@ TimeStamp = /51A45081;
 Reference = SJ5;
 ValeurCmp = SJ;
 IdModule  = SJ_SHORTED;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B7C154;
+Reference = SW1;
+ValeurCmp = SW_PUSHBUTTON;
+IdModule  = TACTILE_SWITCH_SMD_2PIN_TINY;
 EndCmp
 
 EndListe

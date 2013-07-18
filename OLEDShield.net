@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/gus/ft/oled/OLEDShield/OLEDShield.sch)
-    (date "Wed 12 Jun 2013 10:28:37 EST")
+    (date "Thu 18 Jul 2013 12:36:21 EST")
     (tool "eeschema (2013-mar-13)-testing"))
   (components
     (comp (ref JOYSTICK1)
@@ -244,6 +244,7 @@
     (net (code 2) (name /D0)
       (node (ref SHIELD1) (pin 0)))
     (net (code 3) (name /D9)
+      (node (ref SJ1) (pin 1))
       (node (ref SHIELD1) (pin 9)))
     (net (code 4) (name "")
       (node (ref SHIELD1) (pin NC)))
@@ -252,8 +253,7 @@
     (net (code 6) (name /D12)
       (node (ref SHIELD1) (pin 12)))
     (net (code 7) (name /D11)
-      (node (ref SHIELD1) (pin 11))
-      (node (ref SJ1) (pin 1)))
+      (node (ref SHIELD1) (pin 11)))
     (net (code 8) (name /D10)
       (node (ref SHIELD1) (pin 10)))
     (net (code 9) (name /D8)

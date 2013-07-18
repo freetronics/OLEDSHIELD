@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 12 Jun 2013 13:40:15 EST
+EESchema Schematic File Version 2  date Thu 18 Jul 2013 12:36:17 EST
 LIBS:freetronics_kicad_sch_lib
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Freetronics OLEDShield              http://www.freetronics.com/oledshield"
-Date "12 jun 2013"
+Date "18 jul 2013"
 Rev "0.1"
 Comp "(C)2013 Freetronics Pty Ltd"
 Comment1 "Released under TAPR Open Hardware License www.tapr.org/ohl"
@@ -322,7 +322,7 @@ F 3 "" H 8000 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7350 4550 0    60   ~ 0
-D11
+D9
 Text Label 6400 4850 0    60   ~ 0
 D11
 Text Label 6400 5350 0    60   ~ 0

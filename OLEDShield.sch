@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Freetronics OLEDShield              http://www.freetronics.com/oledshield"
-Date "19 jul 2013"
-Rev "0.1"
+Date "24 Jul 2013"
+Rev "1.1"
 Comp "(C)2013 Freetronics Pty Ltd"
 Comment1 "Released under TAPR Open Hardware License www.tapr.org/ohl"
 Comment2 "SKU: OLEDSHIELD"
@@ -746,10 +746,10 @@ Connection ~ 2950 5300
 Wire Wire Line
 	3050 4700 2050 4700
 $Comp
-L R R?
+L R R3
 U 1 1 51EF193C
 P 9450 3000
-F 0 "R?" V 9530 3000 40  0000 C CNN
+F 0 "R3" V 9530 3000 40  0000 C CNN
 F 1 "47K" V 9457 3001 40  0000 C CNN
 F 2 "" V 9380 3000 30  0000 C CNN
 F 3 "" H 9450 3000 30  0000 C CNN
@@ -759,10 +759,10 @@ $EndComp
 Wire Wire Line
 	9450 2750 9450 2600
 $Comp
-L GND #PWR?
+L GND #PWR018
 U 1 1 51EF19C5
 P 9450 3350
-F 0 "#PWR?" H 9450 3350 30  0001 C CNN
+F 0 "#PWR018" H 9450 3350 30  0001 C CNN
 F 1 "GND" H 9450 3280 30  0001 C CNN
 F 2 "" H 9450 3350 60  0000 C CNN
 F 3 "" H 9450 3350 60  0000 C CNN

@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: Wed 24 Jul 2013 11:06:08 EST
+EESchema-LIBRARY Version 2.3  Date: Tue 17 Sep 2013 16:40:30 EST
 #encoding utf-8
 #
 # +5V
@@ -225,9 +225,9 @@ ENDDEF
 #
 # SJ
 #
-DEF ~SJ SJ 0 100 Y Y 1 F N
+DEF SJ SJ 0 100 Y Y 1 F N
 F0 "SJ" -100 -150 70 H V L BNN
-F1 "SJ" -100 100 70 H I L BNN
+F1 "SJ" -100 50 30 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST

@@ -105,12 +105,12 @@ $EndComp
 $Comp
 L GND #PWR02
 U 1 1 51A407AD
-P 8550 5800
-F 0 "#PWR02" H 8550 5800 30  0001 C CNN
-F 1 "GND" H 8550 5730 30  0001 C CNN
-F 2 "" H 8550 5800 60  0000 C CNN
-F 3 "" H 8550 5800 60  0000 C CNN
-	1    8550 5800
+P 8550 6200
+F 0 "#PWR02" H 8550 6200 30  0001 C CNN
+F 1 "GND" H 8550 6130 30  0001 C CNN
+F 2 "" H 8550 6200 60  0000 C CNN
+F 3 "" H 8550 6200 60  0000 C CNN
+	1    8550 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -537,8 +537,6 @@ Wire Wire Line
 	7200 6250 7000 6250
 Connection ~ 7000 6250
 Wire Wire Line
-	8400 6100 9000 6100
-Wire Wire Line
 	5250 4450 5700 4450
 Wire Wire Line
 	5250 3750 5550 3750
@@ -686,11 +684,9 @@ Wire Wire Line
 Wire Wire Line
 	9450 2600 9950 2600
 Wire Wire Line
-	8400 5900 8400 5700
+	8400 6100 8550 6100
 Wire Wire Line
-	8400 5700 8550 5700
-Wire Wire Line
-	8550 5700 8550 5800
+	8550 6100 8550 6200
 Wire Wire Line
 	5250 4150 5550 4150
 Wire Wire Line
@@ -723,8 +719,6 @@ Wire Wire Line
 	3050 4850 3350 4850
 Wire Wire Line
 	3050 4750 3350 4750
-Wire Wire Line
-	9000 5000 9000 6100
 Wire Wire Line
 	5700 4450 5700 4550
 Wire Wire Line
@@ -773,4 +767,8 @@ Wire Wire Line
 	9450 3350 9450 3250
 Text Notes 9650 3000 0    30   ~ 0
 47K pulldown on nRST to\nensure OLED resets\nwhenever MCU resets.
+Wire Wire Line
+	8400 5900 9000 5900
+Wire Wire Line
+	9000 5900 9000 5000
 $EndSCHEMATC
